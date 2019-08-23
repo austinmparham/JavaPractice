@@ -1,11 +1,12 @@
 public class FizzBuzz{
-	public static void main(String[] args){
-		int number = 5;
+	public String checker(int number){
+		String word = "";
 		if(number % 3 == 0){
-			System.out.println("Fizz");
+			word = "Fizz";
 		}
 		else if(number % 5 == 0){
-			System.out.println("Buzz");
+			word = "Buzz";
 		}
+		return word;
 	}
 }
