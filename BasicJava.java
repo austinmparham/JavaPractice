@@ -19,6 +19,18 @@ public class BasicJava{
 		// first_method.GetAverage(list);
 		// first_method.OddArray();
 		// first_method.GreaterThan(list, 2);
-		first_method.SquaredVal(list);
+		// first_method.SquaredVal(list);
+		ArrayList<Integer> negArray = new ArrayList<Integer>();
+		negArray.add(1);
+		negArray.add(2);
+		negArray.add(5);
+		negArray.add(-5);
+		// first_method.ZeroNegative(negArray);
+
+		int[] intArray = {1,2,3};
+		first_method.MaxMinAvg(intArray);
+		first_method.ShiftValue(intArray);
+
+
 	}
 }

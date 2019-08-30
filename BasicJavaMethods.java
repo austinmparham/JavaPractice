@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class BasicJavaMethods{
@@ -83,5 +84,46 @@ public class BasicJavaMethods{
 			System.out.println(num);
 		}
 		System.out.println(array);
+	}
+
+	public void ZeroNegative(ArrayList<Integer> array){
+		for(int i = 0; i < array.size(); i++){
+			Integer num = array.get(i);
+			if(num < 0){
+				array.set(i, 0);
+			}
+		}
+		System.out.println(array);
+	}
+
+	public void MaxMinAvg(int[] array){
+		int max = array[0];
+		int min = array[0];
+		int total = array[0];
+		for(int i = 1; i < array.length; i++){
+			if(max < array[i]){
+				max = array[i];
+			}
+			if(min > array[i]){
+				min = array[i];
+			}
+			total += array[i];
+			System.out.println(total);
+		}
+		double average = total/array.length;
+		System.out.println(max);
+		System.out.println(min);
+		System.out.println(average);
+
+	}
+
+	public void ShiftValue(int[] array){
+		int count = 1;
+		while(count < array.length){
+			array[count-1] = array[count];
+			count++;
+		}
+		array[array.length-1] = 0;
+		System.out.println(Arrays.toString(array));
 	}
 }
